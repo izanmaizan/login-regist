@@ -1,60 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page | Maizan Insani Akbar</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>Login/Register | Maizan Insani Akbar</title>
 </head>
 
 <body>
     <div class="main">
-        <div class="container register-form" id="register-form">
-            <form action="#" class="form" id="register-form">
-                <h2 class="form-title title">
-                    Create Account
-                </h2>
-                <div class="form-icon"></div>
-                <span class="form-span">or use email for registration</span>
-                <input type="text" class="form-input" name="name" placeholder="Name">
-                <input type="email" class="form-input" name="email" placeholder="Email">
-                <input type="password" class="form-input" name="password" placeholder="Password">
-                <button class="form-button button submit">SignIn</button>
+        <div class="container regist-container" id="regist-container">
+            <form class="form" id="regist-form" method="" action="">
+                <h2 class="form-title title">Buat Akun</h2>
+                <div class="form-icons"><i class="fab fa-google form-icon"></i><i
+                        class="fab fa-facebook-f form-icon"></i><i class="fab fa-apple form-icon"></i>
+                </div><span class="form-span">atau gunakan alamat email untuk registrasi</span><input class="form-input"
+                    type="text" placeholder="Name"><input class="form-input" type="text" placeholder="Email"><input
+                    class="form-input" type="password" placeholder="Password"><button
+                    class="switch-button button switch-btn">DAFTAR</button>
             </form>
         </div>
-
-        <div class="container login-form" id="login-form">
-            <form action="#" class="form" id="login-form">
-                <h2 class="form-title title">
-                    Sign in To Website
-                </h2>
-                <div class="form-icon"></div>
-                <span class="form-span">or use your email account</span>
-                <input type="email" class="form-input" name="email" placeholder="Email">
-                <input type="password" class="form-input" name="password" placeholder="Password">
-                <a href="#" class="form-link">Forget Your Password?</a>
-                <button class="form-button button submit">SignIn</button>
+        <div class="container login-container" id="login-container">
+            <form class="form" id="b-form" method="" action="">
+                <h2 class="form-title title">Masuk ke Situs Web</h2>
+                <div class="form-icons"><i class="fab fa-google form-icon"></i><i
+                        class="fab fa-facebook-f form-icon"></i><i class="fab fa-apple form-icon"></i>
+                </div><span class="form-span">atau gunakan akun email Anda</span><input class="form-input" type="text"
+                    placeholder="Email"><input class="form-input" type="password" placeholder="Password"><a
+                    class="form-link">Lupa kata sandi Anda?</a>
+                <button class="switch-button button switch-btn">MASUK</button>
             </form>
         </div>
-
-        <div class="switch" id="switch-frm">
+        <div class="switch" id="switch">
             <div class="switch-circle"></div>
             <div class="switch-circle switch-circle-t"></div>
-            <div class="switch-form" id="switch-f1">
-                <h2 class="switch-title title">Welcome Back !</h2>
-                <p class="switch-description description">To keep connected with us please login with your personal info
+            <div class="switch-container" id="switch-c1">
+                <h2 class="switch-title title">Selamat Datang Kembali!</h2>
+                <p class="switch-description description">Untuk tetap terhubung dengan kami, silakan masuk dengan
+                    informasi pribadi Anda.
                 </p>
-                <button class="switch-button button switch-btn">Login</button>
+                <button class="switch-button button switch-btn">MASUK</button>
             </div>
-            <div class="switch-form is-hidden" id="switch-f2">
-                <h2 class="switch-title title">Hello Friend !</h2>
-                <p class="switch-description description">Enter your personal details and start journey</p>
-                <button class="switch-button button switch-btn">SignIn</button>
+            <div class="switch-container is-hidden" id="switch-c2">
+                <h2 class="switch-title title">Halo Teman !</h2>
+                <p class="switch-description description">Masukkan detail pribadi Anda dan mulai perjalanan bersama
+                    kami.</p>
+                <button class="switch-button button switch-btn">DAFTAR</button>
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 
